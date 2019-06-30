@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141607163-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-141607163-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-141607163-2');
-</script>
+      gtag("config", "UA-141607163-2");
+    </script>
 
     <title>Chia-Lin Liu | IC Designer</title>
     <meta charset="utf-8" />
@@ -22,7 +23,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <link rel="stylesheet" href="chialin-liu.github.io/assets/css/main.css" />
+    <!-- <link rel="stylesheet" href="chialin-liu.github.io/assets/css/main.css" /> -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/ionicons.min.css" rel="stylesheet" />
+
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
   </head>
   <body class="is-preload">
@@ -33,9 +38,9 @@
           <ul>
             <li><a href="#intro">Welcome</a></li>
             <li><a href="#one">About</a></li>
+            <li><a href="#four">Experience</a></li>
             <li><a href="#two">Skills</a></li>
             <li><a href="#three">Project</a></li>
-            <li><a href="#four">Resume</a></li>
             <li><a href="#five">Contact</a></li>
           </ul>
         </nav>
@@ -50,7 +55,9 @@
           <!-- <div class="col-12"><span class="image right"><img src="images/head2.png" alt="" /></span></div> -->
           <h1>Chia-Lin Liu</h1>
           <p>
-            I am a IC designer and my interests are programming websites
+            I am a digital IC designer for 6 years in MediaTek and MStar
+            Semiconductor and my interests are programming websites and being a
+            backpacker around the world
             <!-- </br > -->
             <!-- and travel around the world -->
           </p>
@@ -58,9 +65,19 @@
             <li>
               <a href="#one" class="button primary scrolly">Learn more</a>
             </li>
+            <li>
+              <a
+                download="resume.pdf"
+                href="resume.pdf"
+                class="button primary icon solid fa-download"
+              >
+                Resume</a
+              >
+            </li>
           </ul>
         </div>
       </section>
+
       <!-- One -->
       <section id="one" class="wrapper style2 spotlights">
         <section>
@@ -69,10 +86,10 @@
           /></a>
           <div class="content">
             <div class="inner">
-              <h2>Career Path</h2>
+              <h2>Work Experience</h2>
               <p>
-                My daylight full time job is being a digital IC designer at
-                MediaTek. Focus on the security hardware in set-top box chip.
+                My full time job is being a digital IC designer at MediaTek.
+                Focus on the security hardware in set-top box chip.
               </p>
               <ul class="actions">
                 <li>
@@ -119,7 +136,7 @@
               <ul class="actions">
                 <li>
                   <a href="footprint/travel.html" class="button primary"
-                    >Learn more</a
+                    >Watch Photos</a
                   >
                 </li>
               </ul>
@@ -127,7 +144,80 @@
           </div>
         </section>
       </section>
-
+      <section id="four" class="wrapper style1  fullscreen">
+        <div class="inner">
+          <!-- <div class="experience-timeline"> -->
+          <div class="experience-block clearfix">
+            <div class="exp-meta">
+              <span class="year">2019 - Current</span>
+              <span class="company">MediaTek</span>
+            </div>
+            <!-- end .meta -->
+            <div class="exp-content">
+              <h5>Senior Digital IC Designer</h5>
+              <ul>
+                <li>
+                  Integrated conditional-access (CA) vendor-specific security
+                  IPs to achieve high-end Pay-TV market
+                </li>
+                <li>
+                  Improved functional test coverage up to 98% on the security
+                  IPs in Over-The-Top (OTT) chipsets
+                </li>
+                <li>
+                  Developed a secret key storage for managing different key
+                  generators
+                </li>
+                <li>
+                  Devoted to researching on low power hardware design to save
+                  more than 10% of power consumptions
+                </li>
+              </ul>
+            </div>
+            <div class="exp-icon">
+              <i class="ion-easel"></i>
+            </div>
+            <div class="line"></div>
+          </div>
+          <!-- end .experience-block -->
+          <div class="experience-block clearfix">
+            <div class="exp-meta">
+              <span class="year">2013 - 2018</span>
+              <span class="company">MStar Semiconductor</span>
+            </div>
+            <div class="exp-content">
+              <h5>Senior & Principal Digital IC Designer</h5>
+              <ul>
+                <li>
+                  Achieved a short-term reward by protecting secret keys from
+                  invasive attack in physical place & route
+                </li>
+                <li>
+                  Succeed to implement an advanced conditional-access chipset
+                  certified with a global security lab
+                </li>
+                <li>
+                  Enhanced hardware simulation platform to save 50% amount of
+                  working time by using Perl
+                </li>
+                <li>
+                  Focused on developing a secure crypto environment for set-top
+                  box chipsets toward Pay-TV/OTT
+                </li>
+                <li>
+                  Specialized in DVB MPEG transport stream protection using
+                  cryptographic algorithms (AES/TDES)
+                </li>
+              </ul>
+            </div>
+            <div class="exp-icon">
+              <i class="ion-images"></i>
+            </div>
+            <div class="line"></div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </section>
       <!-- Two -->
       <section id="two" class="wrapper style3 fade-up">
         <div class="inner">
@@ -199,11 +289,11 @@
               </ul>
             </section>
           </div>
-          <ul class="actions">
+          <!-- <ul class="actions">
             <li>
               <a href="#three" class="button primary">Learn more</a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
 
@@ -253,7 +343,7 @@
                   <a
                     href="https://profile-connection.herokuapp.com/"
                     class="button primary"
-                    >Learn more</a
+                    >Website</a
                   >
                 </li>
               </ul>
@@ -263,7 +353,10 @@
 
         <section>
           <a href="https://chat-app-liuchialin.herokuapp.com/" class="image"
-            ><img src="images/chat_room.png" alt="" data-position="top center"
+            ><img
+              src="images/chat-room-2nd-photo.png"
+              alt=""
+              data-position="top center"
           /></a>
           <div class="content">
             <div class="inner">
@@ -284,7 +377,7 @@
                   <a
                     href="https://chat-app-liuchialin.herokuapp.com/"
                     class="button primary"
-                    >Learn more</a
+                    >Website</a
                   >
                 </li>
               </ul>
@@ -297,23 +390,6 @@
         <!-- </div> -->
       </section>
 
-      <section id="four" class="wrapper style1 fullscreen fade-up">
-        <iframe width="100%" height="1200rem" src="resume.pdf"> </iframe>
-
-        <!-- <h1>Resume</h1> -->
-        <div class="inner">
-          <ul class="actions">
-            <li>
-              <a
-                download="resume.pdf"
-                href="resume.pdf"
-                class="button primary scrolly"
-                >Download</a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
       <!-- Three -->
       <section id="five" class="wrapper style1 fade-up">
         <div class="inner">
@@ -349,8 +425,8 @@
                 <li>
                   <h3>Address</h3>
                   <span
-                    >2F, No.6, Heping Road<br />
-                    Chupei, Hinchu<br />
+                    >2F, No.6, Heping Road, Hsinchu<br />
+
                     Taiwan</span
                   >
                 </li>
@@ -411,7 +487,7 @@
     <footer id="footer" class="wrapper style1-alt">
       <div class="inner">
         <ul class="menu">
-          <li>&copy; All rights reserved.</li>
+          <li>&copy; Copyright @chialin All rights reserved.</li>
           <!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
         </ul>
       </div>
@@ -423,6 +499,7 @@
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
